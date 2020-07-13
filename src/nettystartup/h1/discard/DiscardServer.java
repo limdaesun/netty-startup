@@ -10,6 +10,7 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 
 final class DiscardServer {
+	
     public static void main(String[] args) throws Exception {
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup();
@@ -27,4 +28,5 @@ final class DiscardServer {
             bossGroup.shutdownGracefully();
         }
     }
+    
 }
